@@ -1,0 +1,13 @@
+{
+  "type": "nbtcrafting:anvil",
+  "base": {
+    "item": "dragonarmor:dragon_chestplate"
+  },
+  "ingredient": {
+    "item": "minecraft:elytra"
+  },
+  "result": {
+    "item": "minecraft:diamond_sword"
+  },
+  "levels": 10
+}

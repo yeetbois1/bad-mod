@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_head"
+    }
+  ],
+  "result": {
+    "item": "dragonarmor:dragon_scale",
+    "count": 4
+  }
+}

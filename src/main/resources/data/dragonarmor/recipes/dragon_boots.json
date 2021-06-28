@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "dragonarmor:dragon_scale"
+    }
+  },
+  "result": {
+    "item": "dragonarmor:dragon_boots",
+    "count": 1
+  }
+}

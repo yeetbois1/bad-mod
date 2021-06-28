@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mr_sword.dragonarmor.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ArmorItemMixin",
+    "AccessorAnvilScreenHandler",
+    "AccessorExperienceOrbEntity",
+    "AccessorForgingScreenHandler",
+    "AccessorLivingEntity",
+    "MixinAnvilScreenHandler",
+    "MixinExperienceOrbEntity",
+    "MixinPlayerEntity",
+    "MixinPlayerManager"
+  ],
+  "client": [
+    "MixinItemStack"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

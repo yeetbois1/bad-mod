@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_head"
+    },
+    {
+      "item": "dragonarmor:dragon_helmet"
+    }
+  ],
+  "result": {
+    "item": "dragonarmor:dragon_armored_dragon_head",
+    "count": 1
+  }
+}
