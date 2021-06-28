@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "dragonarmor:raw_end_steel"
+  },
+  "result": "dragonarmor:end_steel",
+  "experience": 0.2,
+  "cookingtime": 200
+}
