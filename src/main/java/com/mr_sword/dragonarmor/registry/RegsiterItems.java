@@ -2,7 +2,7 @@ package com.mr_sword.dragonarmor.registry;
 
 import com.mr_sword.dragonarmor.DragonArmor;
 import com.mr_sword.dragonarmor.armor.DragonArmorMaterial;
-import com.mr_sword.dragonarmor.specialitemtype.ArmorWallBlockItem;
+import com.mr_sword.dragonarmor.specialitemtypes.ArmorWallBlockItem;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;

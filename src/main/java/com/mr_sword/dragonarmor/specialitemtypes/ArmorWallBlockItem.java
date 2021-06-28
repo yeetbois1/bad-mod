@@ -1,4 +1,4 @@
-package com.mr_sword.dragonarmor.specialitemtype;
+package com.mr_sword.dragonarmor.specialitemtypes;
 
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
