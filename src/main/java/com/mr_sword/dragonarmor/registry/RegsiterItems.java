@@ -41,5 +41,7 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderium_shard"), Enderium.ENDERIUM_SHARD);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderium_ingot"), Enderium.ENDERIUM_INGOT);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon"), Enderon.ENDERON);
+
     }
 }
