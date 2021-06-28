@@ -38,5 +38,8 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "raw_end_steel"), EndSteel.RAW_END_STEEL);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_steel"), EndSteel.END_STEEL);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderium_shard"), Enderium.ENDERIUM_SHARD);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderium_ingot"), Enderium.ENDERIUM_INGOT);
+
     }
 }
