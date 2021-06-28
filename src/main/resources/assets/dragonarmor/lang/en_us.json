@@ -6,6 +6,8 @@
   "item.dragonarmor.dragon_boots": "Dragon Boots",
   "item.dragonarmor.dragon_scale": "Dragon Scale",
   "item.dragonarmor.dragon_armored_dragon_head": "Dragon Scale Armored Dragon Head",
+  "item.dragonarmor.raw_end_steel": "Raw End Steel",
+  "item.dragonarmor.end_steel": "End Steel",
   "tooltip.dragonarmor.broken": "Unusable",
   "text.autoconfig.dragonarmor.title": "Dragon Armor",
   "text.autoconfig.dragonarmor.option.permissionMode": "Permission Mode",
