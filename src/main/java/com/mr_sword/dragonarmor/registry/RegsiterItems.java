@@ -35,5 +35,8 @@ public class RegsiterItems {
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_armored_dragon_head"), DRAGON_ARMORED_DRAGON_HEAD);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "raw_end_steel"), EndSteel.RAW_END_STEEL);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_steel"), EndSteel.END_STEEL);
+
     }
 }
