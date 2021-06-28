@@ -17,7 +17,7 @@
   "icon": "assets/dragonarmor/icon.png",
 
   "environment": "*",
-  "entrypointsg": {
+  "entrypoints": {
     "main": [
       "com.mr_sword.dragonarmor.DragonArmor"
     ],
