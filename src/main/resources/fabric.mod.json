@@ -4,20 +4,20 @@
   "version": "${version}",
 
   "name": "Dragon Armor",
-  "description": "This",
+  "description": "This mod allows you to create dragon armor, dragon wings, and armored dragon head",
   "authors": [
-    "Me!"
+    "mr_sword"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/yeetbois1/bad-mod/tree/master"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/dragonarmor/icon.png",
 
   "environment": "*",
-  "entrypoints": {
+  "entrypointsg": {
     "main": [
       "com.mr_sword.dragonarmor.DragonArmor"
     ],
