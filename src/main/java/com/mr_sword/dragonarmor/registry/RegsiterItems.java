@@ -43,5 +43,7 @@ public class RegsiterItems {
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon"), Enderon.ENDERON);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "opal"), Opal.OPAL);
+
     }
 }
