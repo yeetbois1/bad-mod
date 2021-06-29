@@ -49,5 +49,11 @@ public class RegsiterItems {
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_debris"), END_DEBRIS);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_sword"), Enderon.ENDERON_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_pickaxe"), Enderon.ENDERON_PICKAXE);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_axe"), Enderon.ENDERON_AXE);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_shovel"), Enderon.ENDERON_SHOVEL);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_hoe"), Enderon.ENDERON_HOE);
+
     }
 }
