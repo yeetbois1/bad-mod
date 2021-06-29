@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#D#",
+    "DOD",
+    "#D#"
+  ],
+  "key": {
+    "#": {
+      "item": "dragonarmor:enderium_shard"
+    },
+    "D": {
+      "item": "dragonarmor:opal"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "dragonarmor:enderon",
+    "count": 1
+  }
+}
