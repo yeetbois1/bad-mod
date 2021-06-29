@@ -25,6 +25,8 @@ public class RegsiterItems {
     public static final Item DRAGON_LEGGINGS = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(DRAGON_ITEM_GROUP));
     public static final Item DRAGON_BOOTS = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(DRAGON_ITEM_GROUP));
 
+    public static final Item END_DEBRIS = new BlockItem(EndDebris.END_DEBRIS, new Item.Settings().group(DRAGON_ITEM_GROUP));
+
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_scale"), DragonScale.DRAGON_SCALE);
 
@@ -44,6 +46,8 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon"), Enderon.ENDERON);
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "opal"), Opal.OPAL);
+
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_debris"), END_DEBRIS);
 
     }
 }

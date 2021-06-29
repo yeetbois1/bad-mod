@@ -3,6 +3,7 @@ package com.mr_sword.dragonarmor;
 import com.mr_sword.dragonarmor.config.AutoConfigPlugin;
 import com.mr_sword.dragonarmor.crafting.ElytraAttachmentRecipe;
 import com.mr_sword.dragonarmor.crafting.ElytraDetachmentRecipe;
+import com.mr_sword.dragonarmor.registry.RegisterBlocks;
 import com.mr_sword.dragonarmor.registry.RegsiterItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -22,6 +23,7 @@ public class DragonArmor implements ModInitializer {
     public void onInitialize() {
 
         RegsiterItems.register();
+        RegisterBlocks.register();
 
         Registry.register(Registry.RECIPE_SERIALIZER, ATTACH_ELYTRA,
                 ElytraAttachmentRecipe.CRAFTING_ATTACH_ELYTRA);
