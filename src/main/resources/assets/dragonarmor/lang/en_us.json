@@ -12,7 +12,7 @@
   "item.dragonarmor.enderium_ingot": "Enderium Ingot",
   "item.dragonarmor.enderon": "Enderon",
   "item.dragonarmor.opal": "Opal",
-  "item.dragonarmor.end_debris": "End Debris",
+  "block.dragonarmor.end_debris": "End Debris",
   "tooltip.dragonarmor.broken": "Unusable",
   "text.autoconfig.dragonarmor.title": "Dragon Armor",
   "text.autoconfig.dragonarmor.option.permissionMode": "Permission Mode",
