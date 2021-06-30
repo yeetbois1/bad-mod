@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "E E",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "item": "dragonarmor:enderon"
+    }
+  },
+  "result": {
+    "item": "dragonarmor:enderon_leggings",
+    "amount": 1
+  }
+}

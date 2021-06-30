@@ -50,5 +50,10 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_shovel"), Enderon.ENDERON_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_hoe"), Enderon.ENDERON_HOE);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_helmet"), Enderon.ENDERON_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_chestplate"), Enderon.ENDERON_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_leggings"), Enderon.ENDERON_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_boots"), Enderon.ENDERON_BOOTS);
+
     }
 }

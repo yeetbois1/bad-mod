@@ -2,6 +2,7 @@ package com.mr_sword.dragonarmor.mixin;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.mr_sword.dragonarmor.registry.Enderon;
 import com.mr_sword.dragonarmor.registry.RegsiterItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -30,7 +31,7 @@ public abstract class ArmorItemMixin {
     private void constructor(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings, CallbackInfo ci) {
         UUID uUID = MODIFIERS[slot.getEntitySlotId()];
 
-        if (material == RegsiterItems.DRAGON_ARMOR_MATERIAL) {
+        if (material == RegsiterItems.DRAGON_ARMOR_MATERIAL || material == Enderon.enderonArmorMaterial) {
             ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
 
             this.attributeModifiers.forEach(builder::put);
