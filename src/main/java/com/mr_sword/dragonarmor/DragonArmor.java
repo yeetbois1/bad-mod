@@ -3,6 +3,7 @@ package com.mr_sword.dragonarmor;
 import com.mr_sword.dragonarmor.config.AutoConfigPlugin;
 import com.mr_sword.dragonarmor.crafting.ElytraAttachmentRecipe;
 import com.mr_sword.dragonarmor.crafting.ElytraDetachmentRecipe;
+import com.mr_sword.dragonarmor.crafting.HelmetAttachmentRecipe;
 import com.mr_sword.dragonarmor.registry.RegisterBlocks;
 import com.mr_sword.dragonarmor.registry.RegsiterItems;
 import net.fabricmc.api.ModInitializer;
@@ -17,6 +18,8 @@ public class DragonArmor implements ModInitializer {
     private static final String ATTACH_ELYTRA = MOD_ID + ":elytra_attachment";
     private static final String DETACH_ELYTRA = MOD_ID + ":elytra_detachment";
 
+    private static final String ATTACH_HELMET = MOD_ID + ":helmet_attachment";
+
     public static boolean isConfigLoaded = false;
 
     @Override
@@ -29,6 +32,8 @@ public class DragonArmor implements ModInitializer {
                 ElytraAttachmentRecipe.CRAFTING_ATTACH_ELYTRA);
         Registry.register(Registry.RECIPE_SERIALIZER, DETACH_ELYTRA,
                 ElytraDetachmentRecipe.CRAFTING_DETACH_ELYTRA);
+        Registry.register(Registry.RECIPE_SERIALIZER, ATTACH_HELMET,
+                HelmetAttachmentRecipe.CRAFTING_ATTACH_HELMET);
 
         // Config
         isConfigLoaded = FabricLoader.getInstance().isModLoaded("cloth-config2");

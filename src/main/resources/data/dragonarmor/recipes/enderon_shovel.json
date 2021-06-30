@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "E": {
+      "item": "dragonarmor:enderon"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  }
+}

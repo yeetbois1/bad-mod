@@ -15,8 +15,7 @@ public class AutoConfigPlugin {
     private static ColytraConfigData configData;
 
     public static void init() {
-        configData =
-                AutoConfig.register(ColytraConfigData.class, JanksonConfigSerializer::new).getConfig();
+        configData = AutoConfig.register(ColytraConfigData.class, JanksonConfigSerializer::new).getConfig();
     }
 
     public static void bake() {

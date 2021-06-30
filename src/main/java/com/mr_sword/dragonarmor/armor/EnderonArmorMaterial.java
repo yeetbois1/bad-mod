@@ -1,19 +1,19 @@
 package com.mr_sword.dragonarmor.armor;
 
-import com.mr_sword.dragonarmor.registry.DragonScale;
+import com.mr_sword.dragonarmor.registry.Enderon;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class DragonArmorMaterial implements ArmorMaterial {
+public class EnderonArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
     private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
 
-    private static final int DURABILITY_MULTIPLIER = 40;
-    private static final int ENCHANTIBILITY = 20;
-    private static final float TOUGHNESS = 6.0f;
+    private static final int DURABILITY_MULTIPLIER = 35;
+    private static final int ENCHANTIBILITY = 18;
+    private static final float TOUGHNESS = 5.0f;
 
     @Override
     public int getDurability(EquipmentSlot slot) {
@@ -32,17 +32,17 @@ public class DragonArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
+        return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(DragonScale.DRAGON_SCALE);
+        return Ingredient.ofItems(Enderon.ENDERON);
     }
 
     @Override
     public String getName() {
-        return "dragon_scale";
+        return "enderon";
     }
 
     @Override
@@ -52,6 +52,6 @@ public class DragonArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getKnockbackResistance() {
-        return 0.125f;
+        return 0.115f;
     }
 }
