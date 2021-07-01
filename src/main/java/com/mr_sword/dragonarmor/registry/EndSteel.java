@@ -1,5 +1,6 @@
 package com.mr_sword.dragonarmor.registry;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 

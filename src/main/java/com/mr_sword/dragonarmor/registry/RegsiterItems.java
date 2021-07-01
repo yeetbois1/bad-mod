@@ -18,6 +18,7 @@ public class RegsiterItems {
     public static final ArmorMaterial DRAGON_ARMOR_MATERIAL = new DragonArmorMaterial();
 
     public static final Item DRAGON_HELMET = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(DRAGON_ITEM_GROUP));
+    public static final Item ARMORED_DRAGON_HEAD = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(DRAGON_ITEM_GROUP));
     public static final Item DRAGON_CHESTPLATE = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(DRAGON_ITEM_GROUP));
     public static final Item DRAGON_LEGGINGS = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(DRAGON_ITEM_GROUP));
     public static final Item DRAGON_BOOTS = new ArmorItem(DRAGON_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(DRAGON_ITEM_GROUP));
@@ -28,6 +29,7 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_scale"), DragonScale.DRAGON_SCALE);
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_helmet"), DRAGON_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "armored_dragon_head"), ARMORED_DRAGON_HEAD);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_chestplate"), DRAGON_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_leggings"), DRAGON_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "dragon_boots"), DRAGON_BOOTS);
