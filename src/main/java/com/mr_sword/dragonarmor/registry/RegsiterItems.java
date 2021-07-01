@@ -57,5 +57,7 @@ public class RegsiterItems {
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_leggings"), Enderon.ENDERON_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "enderon_boots"), Enderon.ENDERON_BOOTS);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_steel_block"), EndSteel.END_STEEL_BLOCK_ITEM);
+
     }
 }

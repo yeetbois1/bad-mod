@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "dragonarmor:end_steel"
+    }
+  },
+  "result:": {
+    "item": "dragonarmor:end_steel_block",
+    "amount": 1
+  }
+}

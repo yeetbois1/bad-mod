@@ -8,5 +8,6 @@ public class RegisterBlocks {
 
     public static void register() {
         Registry.register(Registry.BLOCK, new Identifier(DragonArmor.MOD_ID, "end_debris"), EndDebris.END_DEBRIS);
+        Registry.register(Registry.BLOCK, new Identifier(DragonArmor.MOD_ID, "end_steel_block"), EndSteel.END_STEEL_BLOCK);
     }
 }
