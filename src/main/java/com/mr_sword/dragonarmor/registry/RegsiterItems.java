@@ -59,5 +59,7 @@ public class RegsiterItems {
 
         Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "end_steel_block"), EndSteel.END_STEEL_BLOCK_ITEM);
 
+        Registry.register(Registry.ITEM, new Identifier(DragonArmor.MOD_ID, "opal_ore"), Opal.OPAL_ORE_ITEM);
+
     }
 }
