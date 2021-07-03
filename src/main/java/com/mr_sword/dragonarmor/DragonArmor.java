@@ -76,9 +76,9 @@ public class DragonArmor implements ModInitializer {
             .configure(new OreFeatureConfig(
                     new BlockMatchRuleTest(Blocks.END_STONE),
                     Opal.OPAL_ORE.getDefaultState(),
-            9))
+            2))
             .range(new RangeDecoratorConfig(
-                    UniformHeightProvider.create(YOffset.fixed(0),YOffset.fixed(64))))
+                    UniformHeightProvider.create(YOffset.fixed(0),YOffset.belowTop(40))))
             .spreadHorizontally()
-            .repeat(20);
+            .repeat((int) 0.5f);
 }
