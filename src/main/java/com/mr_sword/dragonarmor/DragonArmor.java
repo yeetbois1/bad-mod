@@ -3,12 +3,27 @@ package com.mr_sword.dragonarmor;
 import com.mr_sword.dragonarmor.config.AutoConfigPlugin;
 import com.mr_sword.dragonarmor.crafting.ElytraAttachmentRecipe;
 import com.mr_sword.dragonarmor.crafting.ElytraDetachmentRecipe;
+import com.mr_sword.dragonarmor.registry.Opal;
 import com.mr_sword.dragonarmor.registry.RegisterBlocks;
 import com.mr_sword.dragonarmor.registry.RegsiterItems;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.block.Blocks;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 
 public class DragonArmor implements ModInitializer {
 
@@ -21,6 +36,11 @@ public class DragonArmor implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
+        RegistryKey<ConfiguredFeature<?, ?>> opalOre = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
+                new Identifier(MOD_ID, "opal_ore"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, opalOre.getValue(), OPAL_ORE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, opalOre);
 
         RegsiterItems.register();
         RegisterBlocks.register();
@@ -51,4 +71,14 @@ public class DragonArmor implements ModInitializer {
                 });
 
     }
+
+    public static ConfiguredFeature<?, ?> OPAL_ORE = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    new BlockMatchRuleTest(Blocks.END_STONE),
+                    Opal.OPAL_ORE.getDefaultState(),
+            9))
+            .range(new RangeDecoratorConfig(
+                    UniformHeightProvider.create(YOffset.fixed(0),YOffset.fixed(64))))
+            .spreadHorizontally()
+            .repeat(20);
 }
